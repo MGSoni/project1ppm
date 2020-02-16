@@ -2,7 +2,7 @@ package com.mohit.ppmtool.exceptions;
 
 public class ProjectIdExceptionResponse {
 
-    public String projectIdentifier;
+    private String projectIdentifier;
     public ProjectIdExceptionResponse(String projectIdentifier){
         this.projectIdentifier = projectIdentifier;
     }

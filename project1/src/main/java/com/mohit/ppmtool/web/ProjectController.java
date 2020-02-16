@@ -18,6 +18,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/api/project")
+@CrossOrigin
 public class ProjectController {
 
     @Autowired
@@ -52,7 +53,7 @@ public class ProjectController {
     }
 
     @GetMapping("/all")
-    public Iterable<Project> getAllProjects(){
+    public @ResponseBody Iterable<Project> getAllProjects(){
         return projectServices.findAllProjects();
     }
 
